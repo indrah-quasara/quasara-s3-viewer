@@ -86,7 +86,8 @@ def main():
         if not folders:
             st.warning("No folders found in the bucket.")
         else:
-            selected_folder = st.selectbox("Choose a top-level folder", folders)
+            #selected_folder = st.selectbox("Choose a top-level folder", folders)
+            selected_folder = "sierra_poc2_insulators2_dino_66b587ece7b433ff03455227_66b589a3c70d86c8306cdf86_f98be70a/"
 
             if selected_folder:
                 image_keys = list_images_in_folder(bucket_name, selected_folder)
